@@ -36,6 +36,7 @@ Após feito isso, deverá estar com este esquema no banco
 ![alt text](images/esquema.png)
 ***
 - 3º. Configurar horário no código python
+
 Localizar o arquivo `bravo.py`, e na linha 238, na chamada `scheduler.add_job` informar o horário para rodar e testar o script
 
 ![alt text](images/bravo.png)
