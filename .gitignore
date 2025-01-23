@@ -1,0 +1,5 @@
+*.venv
+# *.env
+*.vscode
+# *.pdf
+*.py2

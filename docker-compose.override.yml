@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  python_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    volumes:
+      - .:/app
+    command: python bravo.py

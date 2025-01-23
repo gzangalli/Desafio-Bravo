@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: bravo
+      POSTGRES_PASSWORD: bravo123456
+      POSTGRES_DB: Desafio_Bravo
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin_container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: bravo@bravo.com
+      PGADMIN_DEFAULT_PASSWORD: admin1234
+    ports:
+      - "8080:80"
+
+volumes:
+  postgres_data:

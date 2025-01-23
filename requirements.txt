@@ -1,0 +1,9 @@
+psycopg2
+pandas
+requests
+google-cloud-bigquery
+google-auth
+python-dotenv
+apscheduler
+db-dtypes
+pytz
